@@ -16,8 +16,8 @@ void setup () {
   z=floor(random(10,160));
   w=floor(random(30,400));
   a=0;
-  b=-640;
-  c=-1280;
+  b=0;
+  c=0;
   // your code
 } 
 
@@ -27,13 +27,13 @@ void draw() {
   background(0);
   image(bg1Img,a,0);
   a++;
-  a%=640;
-  image(bg2Img,b,0);
+  a%=1280;
+  image(bg2Img,b-640,0);
   b++;
   b%=1280;
-  image(bgImg,c,0); 
+  image(bgImg,c-1280,0); 
   c++;
-  c%=1920;
+  c%=1280;
 
   //C
   image(fighterImg,550,240);

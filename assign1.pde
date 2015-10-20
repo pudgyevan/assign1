@@ -1,4 +1,4 @@
-PImage enemyImg, fighterImg, bgImg,bg1Img, bg2Img, hpImg , treasureImg;
+PImage enemyImg, fighterImg, bg1Img, bg2Img, hpImg , treasureImg;
 int w, x , y ,z,a,b,c;
 //* please implement your assign1 code in this file. */
 
@@ -6,7 +6,6 @@ void setup () {
   size(640,480) ;  // must use this size.
   fighterImg=loadImage("img/fighter.png");
   enemyImg=loadImage("img/enemy.png");
-  bgImg=loadImage("img/bg.png");
   bg1Img=loadImage("img/bg1.png");
   bg2Img=loadImage("img/bg2.png");
   hpImg=loadImage("img/hp.png");
@@ -31,7 +30,7 @@ void draw() {
   image(bg2Img,b-640,0);
   b++;
   b%=1280;
-  image(bgImg,c-1280,0); 
+  image(bg1Img,c-1280,0); 
   c++;
   c%=1280;
 
